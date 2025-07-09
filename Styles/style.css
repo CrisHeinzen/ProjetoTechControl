@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --background: #003d6f;
+  --laranja: #e58e25;
+  --screen: #efeded;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20rem 30rem;
+  height: 25rem;
+}
+ header{
+ border: 1px black solid;  
+ background-color: #fff; 
+ width: 100%;
+ }
+
+section {
+ border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 7rem;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.menu-lateral{
+    background-color: var(--background);
+}
+
+.dashboard{
+    background-color: var(--screen);
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+input {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white 3px solid;
+  padding: 5px;
+  color: var(--screen);
+}
+
+a {
+  color: #fff;
+}
+
+::placeholder {
+  color: #519ad6ea;
+}
+
+.login {
+  background-color: var(--background);
+}
+
+button {
+  background-color: var(--laranja);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 2rem;
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+button:active {
+  width: 95%;
+  height: 1.8rem;
+  margin-bottom: 12px;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  color: black;
+  background-color: var(--screen);
+  border-left: var(--laranja) 6px solid;
+}
+
+span {
+  background-color: var(--laranja);
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+
+    width: 18rem;
+}
+
+.cadastrese {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  /* Remova o border-bottom fixo, se houver */
+}
+
+.cadastrese::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: var(--laranja);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.cadastrese:hover::after {
+  transform: scaleX(1);
+}
