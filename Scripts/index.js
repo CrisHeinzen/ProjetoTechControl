@@ -27,3 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.addEventListener(
+    'DOMContentLoaded', function(atualizar){
+
+        if (atualizar.target.getElementById('estoque')) {
+
+            localStorage.getItem('estoque', JSON.stringify(produtos));
+            
+        }
+
+    }
+)
