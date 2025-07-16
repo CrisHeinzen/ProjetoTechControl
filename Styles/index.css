@@ -84,11 +84,70 @@ main {
 
 .card {
   border: none;
-  border-left: #e58e25 solid 4px;
+  border-left: #e58e25 solid 7px;
   border-radius: 0 3px 3px 0;
-  height: 200px;
+  height: 18rem;
+ 
+  box-shadow: 10px 8px 11px -3px #363636a8;
+  -webkit-box-shadow: 10px 8px 11px -3px #363636a8;
+  -moz-box-shadow: 10px 8px 11px -3px #363636a8;
+
 }
 
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-select{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.card-select select{
+  width: 50%;
+  opacity: 50%;
+  font-size: medium;
+}
+
+.card-title {
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline 3px grey;
+  font-size: 2rem;
+
+}
+
+.card-text {
+
+  text-align: center;
+  font-size: 4rem;
+ 
+}
+
+@media (max-width: 1070px) {
+  .card-text {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .card-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-text {
+    font-size: 2rem;
+  }
+}
 
 
 nav button:active {
