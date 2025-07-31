@@ -102,7 +102,7 @@ document.addEventListener(
             if (e.target.classList.contains('comprar')) {
                 const qtd = parseInt(prompt('Quantidade a comprar:', 1), 0);
                 if (!isNaN(qtd) && qtd > 0) {
-                    produtos[index].estoque += qtd;
+        produtos[index].estoque = Number(produtos[index].estoque) + qtd;
                     localStorage.setItem('produtos', JSON.stringify(produtos));
                     linha.querySelector('.estoque').textContent = produtos[index].estoque;
                 } else {
